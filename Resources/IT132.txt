@@ -1,0 +1,50 @@
+What is the place value in the increasing power of two at the index 4 position?
+>16
+4
+8
+32
+Which of the following is the maximum value that a 5-bit binary ASCII or string can hold?
+30
+>31
+16
+32
+Which of the following is the decimal value of the binary string 101110?
+18
+>46
+45
+17
+To obtain the decimal value of a given binary number, we get the sum of values whose binary bit falls or aligns with a ___ bit.
+unidentified
+null
+>1
+0
+The output of a ___ gate is HIGH when all its inputs are LOW.
+XNOR
+NAND
+>NOR
+XOR
+Let us assume that answers to a certain question comprise 32 possible unique answers. How many bits are required to represent this number of results?
+>5
+6
+4
+3
+The 0s and 1s of the binary system make it easy to represent results of ___.
+mechanical operations
+logical operations
+>two-state operations
+assignment operations
+Considered as the "brains" of the technological world.
+binary digit
+breadboard circuits
+>digital circuits
+analog circuits
+If there are 18 possible answers to a question, using the binary system's characteristics, how many bits are used to represent the possible answers?
+4
+3
+>5
+2
+The rightmost digit (or the least significant digit) of any number, of any number system, has the place value equal to the ___ of the number system used.
+decimal
+value
+place
+>base

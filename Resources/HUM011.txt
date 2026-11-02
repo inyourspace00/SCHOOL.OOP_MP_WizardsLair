@@ -1,0 +1,50 @@
+He who is a Muslim is a follower of Christ.
+E-proposition
+O-proposition
+>A-proposition
+I-proposition
+There are no rainy Mondays.
+A-proposition
+>E-proposition
+O-proposition
+I-proposition
+There are books that are good reads for the soul.
+A-proposition
+O-proposition
+>C) I-proposition
+E-proposition
+There are women who are not mothers.
+E-proposition
+A-proposition
+I-proposition
+>O-proposition
+There are no weak competitor weightlifters.
+O-proposition
+>E-proposition
+I-proposition
+A-proposition
+There are politicians who are not principled public officials.
+E-proposition
+A-proposition
+>O-proposition
+I-proposition
+If one is a scientist, then he is a geologist.
+>A-proposition
+O-proposition
+E-proposition
+I-proposition
+Certain businesses benefit from the COVID-19 pandemic.
+A-proposition
+O-proposition
+E-proposition
+>I-proposition
+There are no pineapples which are mangoes.
+O-proposition
+>E-proposition
+I-proposition
+A-proposition
+There are teen-agers who read books on premarital sex.
+E-proposition
+O-proposition
+A-proposition
+>I-proposition
