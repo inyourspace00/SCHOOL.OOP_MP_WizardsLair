@@ -93,8 +93,20 @@ namespace OOP_MachineProblem_WizardsLair
             return 0;
         }
 
-        public static void SaveScore(string playerName, int score)
+        public static void SaveScoreAuto(int score)
         {
+            string userFile = "userData.txt";
+            string playerName = "Guest";
+
+            if (File.Exists(userFile))
+            {
+                string firstLine = File.ReadLines(userFile).FirstOrDefault();
+                if (!string.IsNullOrWhiteSpace(firstLine))
+                {
+                    playerName = firstLine.Trim();
+                }
+            }
+
             string filePath = "leaderboard.txt";
             string entry = $"{playerName} - {score}";
             File.AppendAllText(filePath, entry + Environment.NewLine);
