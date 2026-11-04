@@ -58,6 +58,9 @@
     <Compile Include="DifficultyPage.Designer.cs">
       <DependentUpon>DifficultyPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="EndScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
