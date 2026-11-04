@@ -37,9 +37,10 @@
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.DoubleBuffered = true;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MainPage";
+            this.Text = "Wizard\'s Lair!";
             this.ResumeLayout(false);
 
         }

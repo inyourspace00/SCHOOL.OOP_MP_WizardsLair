@@ -102,7 +102,7 @@
             this.DoubleBuffered = true;
             this.Name = "DifficultyPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "DifficultyPage";
+            this.Text = "Wizard\'s Lair!";
             this.ResumeLayout(false);
             this.PerformLayout();
 

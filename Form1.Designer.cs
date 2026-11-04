@@ -98,7 +98,7 @@
             this.DoubleBuffered = true;
             this.Name = "StartPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartPage";
+            this.Text = "Wizard\'s Lair!";
             this.ResumeLayout(false);
             this.PerformLayout();
 

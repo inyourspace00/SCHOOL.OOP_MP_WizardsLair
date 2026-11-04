@@ -114,7 +114,7 @@
             this.DoubleBuffered = true;
             this.Name = "CourseSelectPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "CourseSelectPage";
+            this.Text = "Wizard\'s Lair!";
             this.ResumeLayout(false);
             this.PerformLayout();
 
