@@ -196,8 +196,22 @@ namespace OOP_MachineProblem_WizardsLair
 
             if (health <= 0)
             {
-                MessageBox.Show("Game Over! You ran out of health.", "Wizards Lair", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                EndQuiz();
+                using (MiniGame miniGame = new MiniGame())
+                {
+                    miniGame.ShowDialog(this);
+
+                    if (miniGame.Won)
+                    {
+                        health = 1;
+                        UpdateHealthUI();
+                        DisplayQuestion();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Game Over! You ran out of health.", "Wizards Lair", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        EndQuiz();
+                    }
+                }
             }
             else
             {

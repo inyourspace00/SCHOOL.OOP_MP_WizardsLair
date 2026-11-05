@@ -29,5 +29,9 @@ namespace OOP_MachineProblem_WizardsLair
         {
             this.Close();
         }
+
+
+
+        
     }
 }

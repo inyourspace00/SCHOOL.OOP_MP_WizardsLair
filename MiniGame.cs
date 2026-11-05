@@ -20,6 +20,8 @@ namespace OOP_MachineProblem_WizardsLair
         private Label finalPredict;
         private readonly Random random = new Random();
 
+        public bool Won { get; private set; }
+
         public MiniGame()
         {
             InitializeComponent();
@@ -112,11 +114,11 @@ namespace OOP_MachineProblem_WizardsLair
             this.finalPredict.BackColor = System.Drawing.Color.Transparent;
             this.finalPredict.Font = new System.Drawing.Font("Garamond", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finalPredict.ForeColor = System.Drawing.Color.Cornsilk;
-            this.finalPredict.Location = new System.Drawing.Point(408, 213);
+            this.finalPredict.Location = new System.Drawing.Point(429, 213);
             this.finalPredict.Name = "finalPredict";
-            this.finalPredict.Size = new System.Drawing.Size(126, 108);
+            this.finalPredict.Size = new System.Drawing.Size(0, 108);
             this.finalPredict.TabIndex = 4;
-            this.finalPredict.Text = "N";
+            this.finalPredict.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.finalPredict.Click += new System.EventHandler(this.finalPredict_Click);
             // 
             // MiniGame
@@ -137,19 +139,25 @@ namespace OOP_MachineProblem_WizardsLair
 
         }
 
-        private void predictBtn_Click(object sender, EventArgs e)
+        private async void predictBtn_Click(object sender, EventArgs e)
         {
             int userNumber;
 
-            if (!TryGetUserNumber(out userNumber))
+            if (!TryGetUserNumber(out userNumber))q
             {
                 return;
             }
 
             int generatedNumber = gameData[0];
+            finalPredict.Text = generatedNumber.ToString();
+            predictBtn.Enabled = false;
+            numberInput.Enabled = false;
+
+            await Task.Delay(2000);
 
             if (userNumber == generatedNumber)
             {
+                Won = true;
                 MessageBox.Show("You correctly guessed the number.", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearGameData();
@@ -197,8 +205,7 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void finalPredict_Click(object sender, EventArgs e)
         {
-            finalPredict.BackColor = Color.Transparent;
-            finalPredict.Update();
+         
         }
     }
 }

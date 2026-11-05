@@ -66,7 +66,7 @@
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStart.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(281, 254);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(188, 65);
             this.btnStart.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.btnQuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuit.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuit.Location = new System.Drawing.Point(281, 337);
-            this.btnQuit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuit.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(188, 65);
             this.btnQuit.TabIndex = 3;
@@ -101,7 +101,7 @@
             this.Controls.Add(this.lblTitle1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StartPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wizard\'s Lair!";
