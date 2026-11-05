@@ -111,7 +111,7 @@ namespace OOP_MachineProblem_WizardsLair
                 }
             }
 
-            // FALLBACK: If the file couldn't be read or parsed, load mock questions so your UI populates and you can test the game flow!
+            // Backup questions in case file fails to load
             if (questions.Count == 0)
             {
                 questions.Add(new Question
@@ -221,7 +221,7 @@ namespace OOP_MachineProblem_WizardsLair
             }
             else
             {
-                // Optional: set to null or a blank/empty health asset if health hits 0
+                //set to null or a blank/empty health asset if health hits 0
                 picHealth.Image = null;
             }
         }
@@ -243,7 +243,7 @@ namespace OOP_MachineProblem_WizardsLair
         private void ApplyRetroTheme()
         {
             // Score Label style
-            lblScore.BackColor = Color.FromArgb(30, 30, 50);
+            lblScore.BackColor = Color.FromArgb(0, 0, 0);
             lblScore.ForeColor = Color.Gold;
             lblScore.Font = new Font("Consolas", 11, FontStyle.Bold);
             lblScore.TextAlign = ContentAlignment.MiddleCenter;
@@ -260,8 +260,8 @@ namespace OOP_MachineProblem_WizardsLair
             RadioButton[] radios = { rdoOption1, rdoOption2, rdoOption3, rdoOption4 };
             foreach (var rdo in radios)
             {
-                rdo.BackColor = Color.FromArgb(99, 193, 209); // Matches your sky background
-                rdo.ForeColor = Color.Black;                  // Clean, readable dark text
+                rdo.BackColor = Color.FromArgb(99, 193, 209);
+                rdo.ForeColor = Color.Black;                  
                 rdo.Font = new Font("Consolas", 10, FontStyle.Bold);
             }
 
