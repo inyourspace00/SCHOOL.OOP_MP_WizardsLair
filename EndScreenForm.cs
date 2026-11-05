@@ -177,7 +177,7 @@ namespace OOP_MachineProblem_WizardsLair
                 return;
             }
 
-            LeaderboardForm.SaveScore(playerName, finalScore);
+            //LeaderboardForm.SaveScore(playerName, finalScore);
             MessageBox.Show("Score saved to leaderboard!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             btnSaveScore.Enabled = false;

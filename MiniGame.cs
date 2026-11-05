@@ -65,7 +65,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.mainText.ForeColor = System.Drawing.Color.White;
             this.mainText.Location = new System.Drawing.Point(25, 27);
             this.mainText.Name = "mainText";
-            this.mainText.Size = new System.Drawing.Size(381, 147);
+            this.mainText.Size = new System.Drawing.Size(476, 184);
             this.mainText.TabIndex = 0;
             this.mainText.Text = "GUESS THE ";
             // 
@@ -77,7 +77,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 90);
+            this.label1.Size = new System.Drawing.Size(306, 114);
             this.label1.TabIndex = 1;
             this.label1.Text = "Number (1-5)";
             // 
@@ -88,7 +88,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.numberInput.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.numberInput.Location = new System.Drawing.Point(50, 213);
             this.numberInput.Name = "numberInput";
-            this.numberInput.Size = new System.Drawing.Size(180, 53);
+            this.numberInput.Size = new System.Drawing.Size(180, 65);
             this.numberInput.TabIndex = 2;
             this.numberInput.TextChanged += new System.EventHandler(this.numberInput_TextChanged);
             // 
@@ -96,7 +96,7 @@ namespace OOP_MachineProblem_WizardsLair
             // 
             this.predictBtn.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.predictBtn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.predictBtn.Location = new System.Drawing.Point(246, 306);
+            this.predictBtn.Location = new System.Drawing.Point(50, 284);
             this.predictBtn.Name = "predictBtn";
             this.predictBtn.Size = new System.Drawing.Size(146, 42);
             this.predictBtn.TabIndex = 3;
@@ -113,7 +113,8 @@ namespace OOP_MachineProblem_WizardsLair
             this.Controls.Add(this.numberInput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mainText);
-            this.Name = "CourseSelectPage";
+            this.Name = "MiniGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.ResumeLayout(false);
             this.PerformLayout();
 
