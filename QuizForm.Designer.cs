@@ -58,9 +58,9 @@
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lblQuestion.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblQuestion.Location = new System.Drawing.Point(124, 183);
+            this.lblQuestion.Location = new System.Drawing.Point(191, 183);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(756, 28);
+            this.lblQuestion.Size = new System.Drawing.Size(689, 28);
             this.lblQuestion.TabIndex = 3;
             this.lblQuestion.Text = "lblQuestion";
             this.lblQuestion.Click += new System.EventHandler(this.lblQuestion_Click);
