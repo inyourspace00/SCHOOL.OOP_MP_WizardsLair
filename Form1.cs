@@ -21,6 +21,8 @@ namespace OOP_MachineProblem_WizardsLair
         {
             Form DifficultyPage = new DifficultyPage();
             DifficultyPage.ShowDialog();
+
+            this.Hide();
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
