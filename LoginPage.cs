@@ -14,6 +14,7 @@ namespace OOP_MachineProblem_WizardsLair
     public partial class LoginPage : Form
     {
         private const string FileName = "userData.txt";
+
         public LoginPage()
         {
             InitializeComponent();
@@ -93,6 +94,16 @@ namespace OOP_MachineProblem_WizardsLair
             
             txtPassword.Clear(); //clears inputs
             txtUsername.Clear();
+        }
+
+        private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
