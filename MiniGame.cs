@@ -143,7 +143,7 @@ namespace OOP_MachineProblem_WizardsLair
         {
             int userNumber;
 
-            if (!TryGetUserNumber(out userNumber))q
+            if (!TryGetUserNumber(out userNumber))
             {
                 return;
             }
