@@ -55,13 +55,12 @@
             // 
             // lblQuestion
             // 
-            this.lblQuestion.AutoSize = true;
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lblQuestion.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FloralWhite;
             this.lblQuestion.Location = new System.Drawing.Point(124, 183);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(131, 23);
+            this.lblQuestion.Size = new System.Drawing.Size(756, 28);
             this.lblQuestion.TabIndex = 3;
             this.lblQuestion.Text = "lblQuestion";
             this.lblQuestion.Click += new System.EventHandler(this.lblQuestion_Click);
@@ -123,12 +122,12 @@
             // 
             this.btnNext.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.smallerButton;
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Location = new System.Drawing.Point(733, 505);
+            this.btnNext.Location = new System.Drawing.Point(720, 508);
             this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(160, 50);
             this.btnNext.TabIndex = 9;
-            this.btnNext.Text = "Submit";
+            this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
