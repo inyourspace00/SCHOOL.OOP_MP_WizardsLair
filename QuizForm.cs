@@ -245,18 +245,18 @@ namespace OOP_MachineProblem_WizardsLair
         private void ApplyRetroTheme()
         {
             // Score Label style
-            lblScore.BackColor = Color.FromArgb(30, 30, 50);
+            lblScore.BackColor = Color.Transparent;
             lblScore.ForeColor = Color.Gold;
             lblScore.Font = new Font("Consolas", 11, FontStyle.Bold);
             lblScore.TextAlign = ContentAlignment.MiddleCenter;
-            lblScore.BorderStyle = BorderStyle.FixedSingle;
+            lblScore.BorderStyle = BorderStyle.None;
 
             // Question Label style (RPG Dialog Box)
-            lblQuestion.BackColor = Color.FromArgb(20, 24, 33);
+            lblQuestion.BackColor = Color.Transparent;
             lblQuestion.ForeColor = Color.White;
             lblQuestion.Font = new Font("Consolas", 12, FontStyle.Bold);
             lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
-            lblQuestion.BorderStyle = BorderStyle.FixedSingle;
+            lblQuestion.BorderStyle = BorderStyle.None;
 
             // Radio Buttons: Match the sky-blue background to wipe out the white boxes entirely
             RadioButton[] radios = { rdoOption1, rdoOption2, rdoOption3, rdoOption4 };
@@ -274,6 +274,17 @@ namespace OOP_MachineProblem_WizardsLair
             btnNext.FlatStyle = FlatStyle.Flat;
             btnNext.FlatAppearance.BorderSize = 1;
             btnNext.FlatAppearance.BorderColor = Color.Black;
+        }
+
+        private void lblScore_Click(object sender, EventArgs e)
+        {
+            lblScore.BackColor = Color.Transparent;
+            lblScore.Update();
+        }
+
+        private void lblQuestion_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
