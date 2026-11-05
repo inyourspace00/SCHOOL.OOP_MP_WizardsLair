@@ -10,6 +10,7 @@ namespace OOP_MachineProblem_WizardsLair
     {
         private string filePath = "leaderboard.txt";
         private ListBox lstScores;
+        private Label lblHeader;
         private Button btnClose;
 
         public LeaderboardForm()
@@ -23,31 +24,64 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void InitializeComponent()
         {
-            this.lstScores = new ListBox();
-            this.btnClose = new Button();
+            this.lstScores = new System.Windows.Forms.ListBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.SuspendLayout();
-
-            this.lstScores.FormattingEnabled = true;
-            this.lstScores.Location = new System.Drawing.Point(30, 30);
-            this.lstScores.Size = new System.Drawing.Size(390, 220);
+            // 
+            // lstScores
+            // 
+            this.lstScores.BackColor = System.Drawing.Color.Wheat;
             this.lstScores.Font = new System.Drawing.Font("Segoe UI", 10F);
-
-            this.btnClose.Location = new System.Drawing.Point(175, 270);
-            this.btnClose.Size = new System.Drawing.Size(100, 30);
-            this.btnClose.Text = "Close";
+            this.lstScores.FormattingEnabled = true;
+            this.lstScores.ItemHeight = 17;
+            this.lstScores.Location = new System.Drawing.Point(175, 64);
+            this.lstScores.Name = "lstScores";
+            this.lstScores.Size = new System.Drawing.Size(100, 174);
+            this.lstScores.TabIndex = 0;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.smallerButton;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnClose.Location = new System.Drawing.Point(175, 270);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 30);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(139, 9);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(181, 37);
+            this.lblHeader.TabIndex = 2;
+            this.lblHeader.Text = "Leaderboard";
+            // 
+            // LeaderboardForm
+            // 
+            this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(450, 330);
+            this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.lstScores);
             this.Controls.Add(this.btnClose);
-            this.Name = "LeaderboardForm";
-            this.Text = "Wizard's Lair - Leaderboard";
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.Name = "LeaderboardForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Wizard\'s Lair - Leaderboard";
             this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private void LoadAndSortLeaderboard()
