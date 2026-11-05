@@ -124,6 +124,9 @@
   <data name="btnStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SelectCourseButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CS151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CS151.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="ENV075" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ENV075.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
@@ -139,8 +142,14 @@
   <data name="HUM011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HUM011.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="IT129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IT129.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="IT132" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IT132.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IT1115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IT1115.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="MainBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\MainBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

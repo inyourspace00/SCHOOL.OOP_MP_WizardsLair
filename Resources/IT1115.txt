@@ -1,0 +1,50 @@
+What is used to update and retrieve data that is stored in data model?
+High-level Language
+>Query Language
+File Handling Controls
+Binary Operations
+What is a sequence of relational algebra operators called?
+Positional algebra
+Unary operations
+Binary operations
+>Relational algebra expression
+What is used to select required tuples of the relations?
+>Selection
+Projection
+Union
+Cartesian Product
+What is the selection operation also known as?
+Vertical partitioning
+Statement property
+>Horizontal partitioning
+Closure property
+What operation selects certain required attributes, while discarding other attributes?
+Cartesian Product
+Selection
+Union
+>Projection
+Which operator can be used to find the result set of two or more tables?
+Selection
+>Union
+Projection
+Cartesian Product
+In set intersection between two relations, both relations must have the same set of __.
+operations
+values
+tuples
+>attributes
+Which operator combines the information of two different relations into one?
+>Cartesian Product
+Union
+Selection
+Intersection
+What kind of set operation is a cross product?
+>binary
+triad
+unary
+quad
+Which operator removes duplicate data by default?
+Selection
+Union
+Cartesian Product
+>Projection

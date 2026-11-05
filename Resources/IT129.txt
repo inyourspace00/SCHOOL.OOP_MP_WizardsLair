@@ -1,0 +1,50 @@
+What is the memory that the CPU can directly access?
+>Main Memory
+Secondary Memory
+External Memory
+SSDs
+What is the fastest and smallest cache, integrated into the CPU?
+L4 Cache
+L3 Cache
+L2 Cache
+>L1 Cache
+Which cache is often shared by multiple CPU cores?
+L4 Cache
+>L3 Cache
+L2 Cache
+L1 Cache
+What technique uses HDD space as an extension of RAM?
+Virtualization
+Formatting
+>Virtual Memory
+Overwriting
+What is a significant concern in non-volatile memory?
+>Data Remanence
+Hacking
+Overwriting
+Wear-leveling
+For _____ magnetic remanence can be significant.
+SSDs
+Flash Drives
+>HDDs
+NAND Flash Memory
+What method uses a special equipment to remove magnetic fields on a drive?
+Destruction
+Overwriting
+Cryptographic Erase
+>Degaussing
+What method involves writing new data over existing data?
+Cryptographic Erase
+>Overwriting
+Degaussing
+Destruction
+What method uses physical or chemical destruction techniques?
+>Destruction
+Pulverizing
+Overwriting
+Degaussing
+Which method includes encrypting data and destroying the encryption key?
+Pulverizing
+Incineration
+Hacking
+>Cryptographic Erase

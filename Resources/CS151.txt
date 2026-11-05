@@ -1,0 +1,50 @@
+What controls the internal operations of the computer?
+Application Software
+CPU
+>System Software
+ALU
+What are programs designed to assist users with specific, end-user tasks?
+Utilities
+Native Apps
+System Software
+>Application Software
+A program is a set of _________ written in a programming language.
+>instructions
+processes
+code
+commands
+What is the primitive, binary language that computer hardware natively understand?
+Assembly Language
+>Machine Language
+High-Level Language
+Programming Language
+What uses symbolic mnemonics (like ADD or MOV) in place of raw binary patterns?
+High-Level Language
+Programming Language
+>Assembly Language
+Machine Language
+What uses English-like instructions to represent complex logic?
+Machine Language
+Programming Language
+Assembly Language
+>High-Level Language
+What is the core of the OS that directly manages hardware, memory and process execution?
+The Shell
+Command Line Interface
+>The Kernel
+CPU
+When an application issues a system call, it triggers a soft-ware generated interrupt called a _______.
+>Trap
+System Call
+Hardware Exception
+Switch
+What hypervisor installs and runs directly on the raw physical hardware?
+Hosted
+Public
+Private
+>Bare-Metal
+What hypervisor type installs a software application on top of an existing OS?
+Public
+>Hosted
+Bare-Metal
+Hybrid

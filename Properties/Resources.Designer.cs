@@ -81,6 +81,34 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to What controls the internal operations of the computer?
+        ///Application Software
+        ///CPU
+        ///&gt;System Software
+        ///ALU
+        ///What are programs designed to assist users with specific, end-user tasks?
+        ///Utilities
+        ///Native Apps
+        ///System Software
+        ///&gt;Application Software
+        ///A program is a set of _________ written in a programming language.
+        ///&gt;instructions
+        ///processes
+        ///code
+        ///commands
+        ///What is the primitive, binary language that computer hardware natively understand?
+        ///Assembly Language
+        ///&gt;Machine Language
+        ///High-Level Language
+        ///Programming La [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CS151 {
+            get {
+                return ResourceManager.GetString("CS151", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dioxins and PCBs are considered hazardous because they are ___.
         ///inert
         ///&gt;toxic
@@ -170,6 +198,65 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         internal static string HUM011 {
             get {
                 return ResourceManager.GetString("HUM011", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What is used to update and retrieve data that is stored in data model?
+        ///High-level Language
+        ///&gt;Query Language
+        ///File Handling Controls
+        ///Binary Operations
+        ///What is a sequence of relational algebra operators called?
+        ///Positional algebra
+        ///Unary operations
+        ///Binary operations
+        ///&gt;Relational algebra expression
+        ///What is used to select required tuples of the relations?
+        ///&gt;Selection
+        ///Projection
+        ///Union
+        ///Cartesian Product
+        ///What is the selection operation also known as?
+        ///Vertical partitioning
+        ///Statement property
+        ///&gt;Horizontal [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IT1115 {
+            get {
+                return ResourceManager.GetString("IT1115", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What is the memory that the CPU can directly access?
+        ///&gt;Main Memory
+        ///Secondary Memory
+        ///External Memory
+        ///SSDs
+        ///What is the fastest and smallest cache, integrated into the CPU?
+        ///L4 Cache
+        ///L3 Cache
+        ///L2 Cache
+        ///&gt;L1 Cache
+        ///Which cache is often shared by multiple CPU cores?
+        ///L4 Cache
+        ///&gt;L3 Cache
+        ///L2 Cache
+        ///L1 Cache
+        ///What technique uses HDD space as an extension of RAM?
+        ///Virtualization
+        ///Formatting
+        ///&gt;Virtual Memory
+        ///Overwriting
+        ///What is a significant concern in non-volatile memory?
+        ///&gt;Data Remanence
+        ///Hacking
+        ///Overwriti [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IT129 {
+            get {
+                return ResourceManager.GetString("IT129", resourceCulture);
             }
         }
         
