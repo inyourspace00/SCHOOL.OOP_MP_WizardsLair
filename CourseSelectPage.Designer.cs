@@ -39,12 +39,11 @@
             // 
             this.lblCourseSelect.AutoSize = true;
             this.lblCourseSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourseSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourseSelect.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourseSelect.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCourseSelect.Location = new System.Drawing.Point(136, 108);
-            this.lblCourseSelect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCourseSelect.Location = new System.Drawing.Point(181, 133);
             this.lblCourseSelect.Name = "lblCourseSelect";
-            this.lblCourseSelect.Size = new System.Drawing.Size(477, 64);
+            this.lblCourseSelect.Size = new System.Drawing.Size(676, 82);
             this.lblCourseSelect.TabIndex = 2;
             this.lblCourseSelect.Text = "Choose Your Course";
             this.lblCourseSelect.UseCompatibleTextRendering = true;
@@ -55,10 +54,10 @@
             this.btnIT132.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnIT132.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIT132.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIT132.Location = new System.Drawing.Point(283, 198);
-            this.btnIT132.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnIT132.Location = new System.Drawing.Point(377, 244);
+            this.btnIT132.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIT132.Name = "btnIT132";
-            this.btnIT132.Size = new System.Drawing.Size(187, 65);
+            this.btnIT132.Size = new System.Drawing.Size(249, 80);
             this.btnIT132.TabIndex = 3;
             this.btnIT132.Text = "IT132";
             this.btnIT132.UseVisualStyleBackColor = true;
@@ -69,10 +68,10 @@
             this.btnHUM011.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnHUM011.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHUM011.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHUM011.Location = new System.Drawing.Point(283, 276);
-            this.btnHUM011.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnHUM011.Location = new System.Drawing.Point(377, 340);
+            this.btnHUM011.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHUM011.Name = "btnHUM011";
-            this.btnHUM011.Size = new System.Drawing.Size(187, 65);
+            this.btnHUM011.Size = new System.Drawing.Size(249, 80);
             this.btnHUM011.TabIndex = 4;
             this.btnHUM011.Text = "HUM011";
             this.btnHUM011.UseVisualStyleBackColor = true;
@@ -83,10 +82,10 @@
             this.btnENV075.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnENV075.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnENV075.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnENV075.Location = new System.Drawing.Point(283, 356);
-            this.btnENV075.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnENV075.Location = new System.Drawing.Point(377, 438);
+            this.btnENV075.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnENV075.Name = "btnENV075";
-            this.btnENV075.Size = new System.Drawing.Size(187, 65);
+            this.btnENV075.Size = new System.Drawing.Size(249, 80);
             this.btnENV075.TabIndex = 5;
             this.btnENV075.Text = "ENV075";
             this.btnENV075.UseVisualStyleBackColor = true;
@@ -99,21 +98,21 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 43);
+            this.button1.Size = new System.Drawing.Size(53, 53);
             this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CourseSelectPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(755, 586);
+            this.ClientSize = new System.Drawing.Size(1007, 721);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnENV075);
             this.Controls.Add(this.btnHUM011);
@@ -121,9 +120,9 @@
             this.Controls.Add(this.lblCourseSelect);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CourseSelectPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wizard\'s Lair!";
             this.ResumeLayout(false);
             this.PerformLayout();

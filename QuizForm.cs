@@ -111,7 +111,7 @@ namespace OOP_MachineProblem_WizardsLair
                 }
             }
 
-            // FALLBACK: If the file couldn't be read or parsed, load mock questions so your UI populates and you can test the game flow!
+            // Backup questions in case file fails to load
             if (questions.Count == 0)
             {
                 questions.Add(new Question
@@ -221,8 +221,6 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void UpdateHealthUI()
         {
-            // Assuming your PictureBox control is named 'picHealth'. 
-            // If it has a different name in your designer, change 'picHealth' below to match it.
             if (health == 3)
             {
                 picHealth.Image = Properties.Resources.hp_3;
@@ -237,7 +235,7 @@ namespace OOP_MachineProblem_WizardsLair
             }
             else
             {
-                // Optional: set to null or a blank/empty health asset if health hits 0
+                //set to null or a blank/empty health asset if health hits 0
                 picHealth.Image = null;
             }
         }
@@ -276,8 +274,8 @@ namespace OOP_MachineProblem_WizardsLair
             RadioButton[] radios = { rdoOption1, rdoOption2, rdoOption3, rdoOption4 };
             foreach (var rdo in radios)
             {
-                rdo.BackColor = Color.FromArgb(99, 193, 209); // Matches your sky background
-                rdo.ForeColor = Color.Black;                  // Clean, readable dark text
+                rdo.BackColor = Color.FromArgb(99, 193, 209);
+                rdo.ForeColor = Color.Black;                  
                 rdo.Font = new Font("Consolas", 10, FontStyle.Bold);
             }
 
