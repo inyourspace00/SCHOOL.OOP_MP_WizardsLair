@@ -46,9 +46,10 @@
             this.lblScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblScore.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.Color.Gold;
-            this.lblScore.Location = new System.Drawing.Point(46, 47);
+            this.lblScore.Location = new System.Drawing.Point(34, 38);
+            this.lblScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(92, 24);
+            this.lblScore.Size = new System.Drawing.Size(74, 20);
             this.lblScore.TabIndex = 1;
             this.lblScore.Text = "lblScore";
             // 
@@ -58,9 +59,10 @@
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lblQuestion.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblQuestion.Location = new System.Drawing.Point(138, 138);
+            this.lblQuestion.Location = new System.Drawing.Point(104, 112);
+            this.lblQuestion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(131, 23);
+            this.lblQuestion.Size = new System.Drawing.Size(108, 19);
             this.lblQuestion.TabIndex = 3;
             this.lblQuestion.Text = "lblQuestion";
             // 
@@ -69,10 +71,10 @@
             this.rdoOption1.AutoSize = true;
             this.rdoOption1.BackColor = System.Drawing.Color.Transparent;
             this.rdoOption1.ForeColor = System.Drawing.Color.Chocolate;
-            this.rdoOption1.Location = new System.Drawing.Point(458, 277);
-            this.rdoOption1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoOption1.Location = new System.Drawing.Point(344, 225);
+            this.rdoOption1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoOption1.Name = "rdoOption1";
-            this.rdoOption1.Size = new System.Drawing.Size(94, 20);
+            this.rdoOption1.Size = new System.Drawing.Size(77, 17);
             this.rdoOption1.TabIndex = 4;
             this.rdoOption1.TabStop = true;
             this.rdoOption1.Text = "rdoOption1";
@@ -82,10 +84,10 @@
             // 
             this.rdoOption2.AutoSize = true;
             this.rdoOption2.BackColor = System.Drawing.Color.Transparent;
-            this.rdoOption2.Location = new System.Drawing.Point(458, 316);
-            this.rdoOption2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoOption2.Location = new System.Drawing.Point(344, 257);
+            this.rdoOption2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoOption2.Name = "rdoOption2";
-            this.rdoOption2.Size = new System.Drawing.Size(94, 20);
+            this.rdoOption2.Size = new System.Drawing.Size(77, 17);
             this.rdoOption2.TabIndex = 5;
             this.rdoOption2.TabStop = true;
             this.rdoOption2.Text = "rdoOption2";
@@ -95,10 +97,10 @@
             // 
             this.rdoOption3.AutoSize = true;
             this.rdoOption3.BackColor = System.Drawing.Color.Transparent;
-            this.rdoOption3.Location = new System.Drawing.Point(458, 361);
-            this.rdoOption3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoOption3.Location = new System.Drawing.Point(344, 293);
+            this.rdoOption3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoOption3.Name = "rdoOption3";
-            this.rdoOption3.Size = new System.Drawing.Size(94, 20);
+            this.rdoOption3.Size = new System.Drawing.Size(77, 17);
             this.rdoOption3.TabIndex = 6;
             this.rdoOption3.TabStop = true;
             this.rdoOption3.Text = "rdoOption3";
@@ -108,10 +110,10 @@
             // 
             this.rdoOption4.AutoSize = true;
             this.rdoOption4.BackColor = System.Drawing.Color.Transparent;
-            this.rdoOption4.Location = new System.Drawing.Point(458, 403);
-            this.rdoOption4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoOption4.Location = new System.Drawing.Point(344, 327);
+            this.rdoOption4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoOption4.Name = "rdoOption4";
-            this.rdoOption4.Size = new System.Drawing.Size(94, 20);
+            this.rdoOption4.Size = new System.Drawing.Size(77, 17);
             this.rdoOption4.TabIndex = 7;
             this.rdoOption4.TabStop = true;
             this.rdoOption4.Text = "rdoOption4";
@@ -121,10 +123,10 @@
             // 
             this.btnNext.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.smallerButton;
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Location = new System.Drawing.Point(733, 504);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Location = new System.Drawing.Point(550, 410);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(160, 50);
+            this.btnNext.Size = new System.Drawing.Size(120, 41);
             this.btnNext.TabIndex = 9;
             this.btnNext.Text = "Submit";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -135,18 +137,20 @@
             this.picHealth.BackColor = System.Drawing.Color.Transparent;
             this.picHealth.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.hp_3;
             this.picHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picHealth.Location = new System.Drawing.Point(759, -28);
+            this.picHealth.Location = new System.Drawing.Point(568, -8);
+            this.picHealth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picHealth.Name = "picHealth";
-            this.picHealth.Size = new System.Drawing.Size(250, 175);
+            this.picHealth.Size = new System.Drawing.Size(188, 139);
             this.picHealth.TabIndex = 10;
             this.picHealth.TabStop = false;
             // 
             // QuizForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(754, 586);
             this.Controls.Add(this.picHealth);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.rdoOption4);
@@ -155,7 +159,9 @@
             this.Controls.Add(this.rdoOption1);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblScore);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "QuizForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "QuizForm";

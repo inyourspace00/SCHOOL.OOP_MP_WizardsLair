@@ -76,14 +76,20 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-	<Compile Include="LeaderboardForm.cs">
-	  <SubType>Form</SubType>
-	</Compile>
+    <Compile Include="LeaderboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayWallSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayWallSys.Designer.cs">
+      <DependentUpon>PayWallSys.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +105,9 @@
     <EmbeddedResource Include="DifficultyPage.resx">
       <DependentUpon>DifficultyPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EndScreenForm.resx">
+      <DependentUpon>EndScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MiniGame.resx">
       <DependentUpon>MiniGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayWallSys.resx">
+      <DependentUpon>PayWallSys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
