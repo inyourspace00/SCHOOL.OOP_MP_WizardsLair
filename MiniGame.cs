@@ -17,6 +17,7 @@ namespace OOP_MachineProblem_WizardsLair
         private Button predictBtn;
         private Label mainText;
         private int[] gameData;
+        private Label finalPredict;
         private readonly Random random = new Random();
 
         public MiniGame()
@@ -55,6 +56,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.label1 = new System.Windows.Forms.Label();
             this.numberInput = new System.Windows.Forms.TextBox();
             this.predictBtn = new System.Windows.Forms.Button();
+            this.finalPredict = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainText
@@ -104,11 +106,25 @@ namespace OOP_MachineProblem_WizardsLair
             this.predictBtn.UseVisualStyleBackColor = true;
             this.predictBtn.Click += new System.EventHandler(this.predictBtn_Click);
             // 
+            // finalPredict
+            // 
+            this.finalPredict.AutoSize = true;
+            this.finalPredict.BackColor = System.Drawing.Color.Transparent;
+            this.finalPredict.Font = new System.Drawing.Font("Garamond", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalPredict.ForeColor = System.Drawing.Color.Cornsilk;
+            this.finalPredict.Location = new System.Drawing.Point(408, 213);
+            this.finalPredict.Name = "finalPredict";
+            this.finalPredict.Size = new System.Drawing.Size(126, 108);
+            this.finalPredict.TabIndex = 4;
+            this.finalPredict.Text = "N";
+            this.finalPredict.Click += new System.EventHandler(this.finalPredict_Click);
+            // 
             // MiniGame
             // 
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MiniGameBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(631, 482);
+            this.Controls.Add(this.finalPredict);
             this.Controls.Add(this.predictBtn);
             this.Controls.Add(this.numberInput);
             this.Controls.Add(this.label1);
@@ -177,6 +193,12 @@ namespace OOP_MachineProblem_WizardsLair
             }
 
             return true;
+        }
+
+        private void finalPredict_Click(object sender, EventArgs e)
+        {
+            finalPredict.BackColor = Color.Transparent;
+            finalPredict.Update();
         }
     }
 }
