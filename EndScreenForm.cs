@@ -177,7 +177,7 @@ namespace OOP_MachineProblem_WizardsLair
                 return;
             }
 
-            LeaderboardForm.SaveScore(playerName, finalScore);
+            //LeaderboardForm.SaveScore(playerName, finalScore);
             MessageBox.Show("Score saved to leaderboard!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             btnSaveScore.Enabled = false;
@@ -193,8 +193,8 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void btnViewLeaderboard_Click(object sender, EventArgs e)
         {
-            LeaderboardForm leaderboard = new LeaderboardForm();
-            leaderboard.ShowDialog();
+            //LeaderboardForm leaderboard = new LeaderboardForm();
+            //leaderboard.ShowDialog();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
