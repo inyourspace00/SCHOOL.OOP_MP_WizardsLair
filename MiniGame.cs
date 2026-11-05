@@ -96,7 +96,7 @@ namespace OOP_MachineProblem_WizardsLair
             // 
             this.predictBtn.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.predictBtn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.predictBtn.Location = new System.Drawing.Point(246, 306);
+            this.predictBtn.Location = new System.Drawing.Point(50, 289);
             this.predictBtn.Name = "predictBtn";
             this.predictBtn.Size = new System.Drawing.Size(146, 42);
             this.predictBtn.TabIndex = 3;
@@ -113,7 +113,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.Controls.Add(this.numberInput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mainText);
-            this.Name = "CourseSelectPage";
+            this.Name = "MiniGame";
             this.ResumeLayout(false);
             this.PerformLayout();
 
