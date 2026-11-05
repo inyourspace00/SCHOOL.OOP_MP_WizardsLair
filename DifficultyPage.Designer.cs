@@ -39,9 +39,10 @@
             this.btnHard.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnHard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHard.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHard.Location = new System.Drawing.Point(379, 350);
+            this.btnHard.Location = new System.Drawing.Point(426, 445);
+            this.btnHard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHard.Name = "btnHard";
-            this.btnHard.Size = new System.Drawing.Size(250, 80);
+            this.btnHard.Size = new System.Drawing.Size(281, 100);
             this.btnHard.TabIndex = 8;
             this.btnHard.Text = "HARD";
             this.btnHard.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             this.btnEasy.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnEasy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEasy.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEasy.Location = new System.Drawing.Point(379, 255);
+            this.btnEasy.Location = new System.Drawing.Point(426, 319);
+            this.btnEasy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEasy.Name = "btnEasy";
-            this.btnEasy.Size = new System.Drawing.Size(250, 80);
+            this.btnEasy.Size = new System.Drawing.Size(281, 100);
             this.btnEasy.TabIndex = 7;
             this.btnEasy.Text = "EASY";
             this.btnEasy.UseVisualStyleBackColor = true;
@@ -64,11 +66,11 @@
             // 
             this.lblDifficultySelect.AutoSize = true;
             this.lblDifficultySelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblDifficultySelect.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDifficultySelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDifficultySelect.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDifficultySelect.Location = new System.Drawing.Point(129, 135);
+            this.lblDifficultySelect.Location = new System.Drawing.Point(145, 169);
             this.lblDifficultySelect.Name = "lblDifficultySelect";
-            this.lblDifficultySelect.Size = new System.Drawing.Size(830, 85);
+            this.lblDifficultySelect.Size = new System.Drawing.Size(787, 94);
             this.lblDifficultySelect.TabIndex = 6;
             this.lblDifficultySelect.Text = "Choose Your Difficulty";
             this.lblDifficultySelect.UseCompatibleTextRendering = true;
@@ -81,25 +83,27 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(14, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 53);
+            this.button1.Size = new System.Drawing.Size(60, 66);
             this.button1.TabIndex = 9;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DifficultyPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.ClientSize = new System.Drawing.Size(1132, 901);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnHard);
             this.Controls.Add(this.btnEasy);
             this.Controls.Add(this.lblDifficultySelect);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DifficultyPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Wizard\'s Lair!";
