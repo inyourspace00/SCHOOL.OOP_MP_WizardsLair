@@ -17,30 +17,39 @@ namespace OOP_MachineProblem_WizardsLair
             InitializeComponent();
         }
 
-        private void lblCourseSelect_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnHUM011_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // EASY button clicked (wired in designer as btnIT132_Click)
         private void btnIT132_Click(object sender, EventArgs e)
         {
-            Form CourseSelectPage = new CourseSelectPage();
-            CourseSelectPage.ShowDialog();
+            // Moves to Course Select next in the flow
+            CourseSelectPage coursePage = new CourseSelectPage();
+            coursePage.Show();
+            this.Hide();
         }
 
-        private void btnENV075_Click(object sender, EventArgs e)
+        // HARD button clicked (wired in designer as btnHUM011_Click)
+        private void btnHUM011_Click(object sender, EventArgs e)
         {
-
+            // Moves to Course Select next in the flow
+            CourseSelectPage coursePage = new CourseSelectPage();
+            coursePage.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEasy_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnHard_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblCourseSelect_Click(object sender, EventArgs e)
+        {
         }
     }
 }

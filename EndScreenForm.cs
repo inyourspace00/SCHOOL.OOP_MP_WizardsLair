@@ -193,8 +193,8 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void btnViewLeaderboard_Click(object sender, EventArgs e)
         {
-            LeaderboardForm leaderboard = new LeaderboardForm();
-            leaderboard.ShowDialog();
+            //LeaderboardForm leaderboard = new LeaderboardForm();
+            //leaderboard.ShowDialog();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
