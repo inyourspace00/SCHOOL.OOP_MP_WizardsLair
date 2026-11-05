@@ -223,21 +223,22 @@ namespace OOP_MachineProblem_WizardsLair
         {
             if (health == 3)
             {
-                picHealth.Image = Properties.Resources.hp_3;
+                picHealth.BackgroundImage = Properties.Resources.hp_3;
             }
             else if (health == 2)
             {
-                picHealth.Image = Properties.Resources.hp_2;
+                picHealth.BackgroundImage = Properties.Resources.hp_2;
             }
             else if (health == 1)
             {
-                picHealth.Image = Properties.Resources.hp_1;
+                picHealth.BackgroundImage = Properties.Resources.hp_1;
             }
             else
             {
                 //set to null or a blank/empty health asset if health hits 0
                 picHealth.Image = null;
             }
+            
         }
 
         private void EndQuiz()
@@ -269,6 +270,9 @@ namespace OOP_MachineProblem_WizardsLair
             lblQuestion.Font = new Font("Consolas", 12, FontStyle.Bold);
             lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
             lblQuestion.BorderStyle = BorderStyle.None;
+            lblQuestion.AutoSize = true;
+            lblQuestion.MaximumSize = new System.Drawing.Size(460, 0);
+            
 
             // Radio Buttons: Match the sky-blue background to wipe out the white boxes entirely
             RadioButton[] radios = { rdoOption1, rdoOption2, rdoOption3, rdoOption4 };
@@ -294,9 +298,6 @@ namespace OOP_MachineProblem_WizardsLair
             lblScore.Update();
         }
 
-        private void lblQuestion_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

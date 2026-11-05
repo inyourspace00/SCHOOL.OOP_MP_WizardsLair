@@ -63,7 +63,7 @@
             this.lblQuestion.Size = new System.Drawing.Size(689, 28);
             this.lblQuestion.TabIndex = 3;
             this.lblQuestion.Text = "lblQuestion";
-            this.lblQuestion.Click += new System.EventHandler(this.lblQuestion_Click);
+            
             // 
             // rdoOption1
             // 
