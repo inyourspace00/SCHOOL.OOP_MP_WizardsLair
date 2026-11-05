@@ -102,7 +102,7 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         ///groundwater
         ///a pond
         ///an aquifer
-        ///The upper limit of an unconfined undergr [rest of string was truncated]&quot;;.
+        ///The upper limit of  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENV075 {
             get {
@@ -165,8 +165,7 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         ///O-proposition
         ///&gt;E-proposition
         ///I-proposition
-        ///A-proposition
-        ///There are politicians [rest of string was truncated]&quot;;.
+        ///A-propositi [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string HUM011 {
             get {
@@ -195,12 +194,7 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         ///null
         ///&gt;1
         ///0
-        ///The output of a ___ gate is HIGH when all its inputs are LOW.
-        ///XNOR
-        ///NAND
-        ///&gt;NOR
-        ///XOR
-        /// [rest of string was truncated]&quot;;.
+        ///The output of a ___ gate is HIGH when all its inputs are LOW. [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string IT132 {
             get {
@@ -224,6 +218,16 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         internal static System.Drawing.Bitmap MiniGameBG {
             get {
                 object obj = ResourceManager.GetObject("MiniGameBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smallerButton {
+            get {
+                object obj = ResourceManager.GetObject("smallerButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
