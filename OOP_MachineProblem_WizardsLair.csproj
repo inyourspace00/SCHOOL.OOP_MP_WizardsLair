@@ -73,6 +73,9 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+	<Compile Include="LeaderboardForm.cs">
+	  <SubType>Form</SubType>
+	</Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
