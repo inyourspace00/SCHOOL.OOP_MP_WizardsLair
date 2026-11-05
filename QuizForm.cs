@@ -8,7 +8,6 @@ namespace OOP_MachineProblem_WizardsLair
 {
     public partial class QuizForm : Form
     {
-        // Model to hold question details
         public class Question
         {
             public string Text { get; set; }
@@ -16,13 +15,13 @@ namespace OOP_MachineProblem_WizardsLair
             public string Option2 { get; set; }
             public string Option3 { get; set; }
             public string Option4 { get; set; }
-            public int CorrectOptionIndex { get; set; } // 1, 2, 3, or 4
+            public int CorrectOptionIndex { get; set; }
         }
 
         private List<Question> questions = new List<Question>();
         private int currentQuestionIndex = 0;
         private int score = 0;
-        private int health = 3; // Total lives
+        private int health = 3;
 
         public string SelectedCourse { get; set; }
         public string SelectedDifficulty { get; set; }
@@ -34,14 +33,12 @@ namespace OOP_MachineProblem_WizardsLair
             this.SelectedCourse = course;
             this.SelectedDifficulty = difficulty;
 
-            // FORCE IT TO LOAD AND DISPLAY IMMEDIATELY UPON CREATION
             LoadQuestionsFromFile();
             DisplayQuestion();
         }
 
         private void QuizForm_Load(object sender, EventArgs e)
         {
-            // (Leaving this here just in case, but constructor handles it now)
         }
 
         private void LoadQuestionsFromFile()
@@ -50,16 +47,15 @@ namespace OOP_MachineProblem_WizardsLair
             string rawData = string.Empty;
             string fileName = $"{SelectedCourse}.txt";
 
-            // Search paths for your .txt files
             string baseDir = AppDomain.CurrentDomain.BaseDirectory;
             string[] searchPaths = {
-        Path.Combine(baseDir, fileName),
-        Path.Combine(baseDir, "Resources", fileName),
-        Path.Combine(baseDir, "..", "..", "..", "Resources", fileName),
-        Path.Combine(baseDir, "..", "..", "Resources", fileName),
-        Path.Combine(Directory.GetCurrentDirectory(), fileName),
-        Path.Combine(Directory.GetCurrentDirectory(), "Resources", fileName)
-    };
+                Path.Combine(baseDir, fileName),
+                Path.Combine(baseDir, "Resources", fileName),
+                Path.Combine(baseDir, "..", "..", "..", "Resources", fileName),
+                Path.Combine(baseDir, "..", "..", "Resources", fileName),
+                Path.Combine(Directory.GetCurrentDirectory(), fileName),
+                Path.Combine(Directory.GetCurrentDirectory(), "Resources", fileName)
+            };
 
             foreach (string path in searchPaths)
             {
@@ -70,7 +66,6 @@ namespace OOP_MachineProblem_WizardsLair
                 }
             }
 
-            // Try parsing the file if found
             if (!string.IsNullOrEmpty(rawData))
             {
                 string[] lines = rawData.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
@@ -111,7 +106,6 @@ namespace OOP_MachineProblem_WizardsLair
                 }
             }
 
-            // Backup questions in case file fails to load
             if (questions.Count == 0)
             {
                 questions.Add(new Question
@@ -157,7 +151,6 @@ namespace OOP_MachineProblem_WizardsLair
             rdoOption3.Text = q.Option3;
             rdoOption4.Text = q.Option4;
 
-            // Clear selections
             rdoOption1.Checked = false;
             rdoOption2.Checked = false;
             rdoOption3.Checked = false;
@@ -180,7 +173,6 @@ namespace OOP_MachineProblem_WizardsLair
                 return;
             }
 
-            // Check Answer
             Question currentQ = questions[currentQuestionIndex];
             if (selectedIndex == currentQ.CorrectOptionIndex)
             {
@@ -235,51 +227,43 @@ namespace OOP_MachineProblem_WizardsLair
             }
             else
             {
-                //set to null or a blank/empty health asset if health hits 0
                 picHealth.Image = null;
             }
         }
 
         private void EndQuiz()
         {
-            MessageBox.Show($"Quiz Completed!\nFinal Score: {score}", "Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Uncomment when EndScreenForm is ready:
-            // EndScreenForm endScreen = new EndScreenForm(score);
-            // endScreen.Show();
-
+            EndScreenForm endScreen = new EndScreenForm(score, SelectedCourse, SelectedDifficulty);
+            endScreen.Show();
             this.Close();
         }
 
         private void picBackground_Click(object sender, EventArgs e)
         {
         }
+
         private void ApplyRetroTheme()
         {
-            // Score Label style
             lblScore.BackColor = Color.Transparent;
             lblScore.ForeColor = Color.Gold;
             lblScore.Font = new Font("Consolas", 11, FontStyle.Bold);
             lblScore.TextAlign = ContentAlignment.MiddleCenter;
             lblScore.BorderStyle = BorderStyle.None;
 
-            // Question Label style (RPG Dialog Box)
             lblQuestion.BackColor = Color.Transparent;
             lblQuestion.ForeColor = Color.White;
             lblQuestion.Font = new Font("Consolas", 12, FontStyle.Bold);
             lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
             lblQuestion.BorderStyle = BorderStyle.None;
 
-            // Radio Buttons: Match the sky-blue background to wipe out the white boxes entirely
             RadioButton[] radios = { rdoOption1, rdoOption2, rdoOption3, rdoOption4 };
             foreach (var rdo in radios)
             {
                 rdo.BackColor = Color.FromArgb(99, 193, 209);
-                rdo.ForeColor = Color.Black;                  
+                rdo.ForeColor = Color.Black;
                 rdo.Font = new Font("Consolas", 10, FontStyle.Bold);
             }
 
-            // Next Button style
             btnNext.BackColor = Color.FromArgb(244, 196, 48);
             btnNext.ForeColor = Color.FromArgb(40, 40, 40);
             btnNext.Font = new Font("Consolas", 11, FontStyle.Bold);
@@ -296,7 +280,6 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void lblQuestion_Click(object sender, EventArgs e)
         {
-
         }
     }
 }
