@@ -207,8 +207,6 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void UpdateHealthUI()
         {
-            // Assuming your PictureBox control is named 'picHealth'. 
-            // If it has a different name in your designer, change 'picHealth' below to match it.
             if (health == 3)
             {
                 picHealth.Image = Properties.Resources.hp_3;
