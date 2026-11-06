@@ -22,6 +22,7 @@ namespace OOP_MachineProblem_WizardsLair
         private int currentQuestionIndex = 0;
         private int score = 0;
         private int health = 3;
+        private Random rand = new Random();
 
         public string SelectedCourse { get; set; }
         public string SelectedDifficulty { get; set; }
@@ -93,6 +94,32 @@ namespace OOP_MachineProblem_WizardsLair
                             }
                         }
 
+                        var optionList = new List<(string Text, bool IsCorrect)>();
+                        for (int j = 0; j < 4; j++)
+                        {
+                            optionList.Add((opts[j], j + 1 == correctIndex));
+                        }
+
+                        int n = optionList.Count;
+                        while (n > 1)
+                        {
+                            n--;
+                            int k = rand.Next(n + 1);
+                            var value = optionList[k];
+                            optionList[k] = optionList[n];
+                            optionList[n] = value;
+                        }
+
+                        int newCorrectIndex = 1;
+                        for (int j = 0; j < 4; j++)
+                        {
+                            opts[j] = optionList[j].Text;
+                            if (optionList[j].IsCorrect)
+                            {
+                                newCorrectIndex = j + 1;
+                            }
+                        }
+
                         questions.Add(new Question
                         {
                             Text = qText,
@@ -100,7 +127,7 @@ namespace OOP_MachineProblem_WizardsLair
                             Option2 = opts[1],
                             Option3 = opts[2],
                             Option4 = opts[3],
-                            CorrectOptionIndex = correctIndex
+                            CorrectOptionIndex = newCorrectIndex
                         });
                     }
                 }
@@ -229,7 +256,6 @@ namespace OOP_MachineProblem_WizardsLair
             {
                 picHealth.Image = null;
             }
-            
         }
 
         private void EndQuiz()
@@ -258,7 +284,6 @@ namespace OOP_MachineProblem_WizardsLair
             lblQuestion.BorderStyle = BorderStyle.None;
             lblQuestion.AutoSize = true;
             lblQuestion.MaximumSize = new System.Drawing.Size(460, 0);
-            
 
             RadioButton[] radios = { rdoOption1, rdoOption2, rdoOption3, rdoOption4 };
             foreach (var rdo in radios)
@@ -281,7 +306,5 @@ namespace OOP_MachineProblem_WizardsLair
             lblScore.BackColor = Color.Transparent;
             lblScore.Update();
         }
-
-
     }
 }
