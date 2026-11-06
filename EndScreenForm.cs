@@ -214,8 +214,8 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void btnPlayAgain_Click(object sender, EventArgs e)
         {
-            CourseSelectPage courseSelect = new CourseSelectPage();
-            courseSelect.Show();
+            DifficultyPage difficultyPage = new DifficultyPage();
+            difficultyPage.ShowDialog();
             this.Close();
         }
 
