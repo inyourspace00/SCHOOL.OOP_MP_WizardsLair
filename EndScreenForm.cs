@@ -60,7 +60,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblHeader.Font = new System.Drawing.Font("Garamond", 20F, System.Drawing.FontStyle.Bold);
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(300, 35);
+            this.lblHeader.Location = new System.Drawing.Point(288, 41);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(179, 30);
             this.lblHeader.TabIndex = 0;
@@ -72,7 +72,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblScoreHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreHeader.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold);
             this.lblScoreHeader.ForeColor = System.Drawing.Color.White;
-            this.lblScoreHeader.Location = new System.Drawing.Point(289, 116);
+            this.lblScoreHeader.Location = new System.Drawing.Point(277, 122);
             this.lblScoreHeader.Name = "lblScoreHeader";
             this.lblScoreHeader.Size = new System.Drawing.Size(83, 17);
             this.lblScoreHeader.TabIndex = 1;
@@ -84,7 +84,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblScoreValue.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreValue.Font = new System.Drawing.Font("Garamond", 11F);
             this.lblScoreValue.ForeColor = System.Drawing.Color.White;
-            this.lblScoreValue.Location = new System.Drawing.Point(449, 116);
+            this.lblScoreValue.Location = new System.Drawing.Point(437, 122);
             this.lblScoreValue.Name = "lblScoreValue";
             this.lblScoreValue.Size = new System.Drawing.Size(15, 17);
             this.lblScoreValue.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblCourseHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblCourseHeader.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold);
             this.lblCourseHeader.ForeColor = System.Drawing.Color.White;
-            this.lblCourseHeader.Location = new System.Drawing.Point(289, 156);
+            this.lblCourseHeader.Location = new System.Drawing.Point(277, 162);
             this.lblCourseHeader.Name = "lblCourseHeader";
             this.lblCourseHeader.Size = new System.Drawing.Size(56, 17);
             this.lblCourseHeader.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblCourseValue.BackColor = System.Drawing.Color.Transparent;
             this.lblCourseValue.Font = new System.Drawing.Font("Garamond", 11F);
             this.lblCourseValue.ForeColor = System.Drawing.Color.White;
-            this.lblCourseValue.Location = new System.Drawing.Point(449, 156);
+            this.lblCourseValue.Location = new System.Drawing.Point(437, 162);
             this.lblCourseValue.Name = "lblCourseValue";
             this.lblCourseValue.Size = new System.Drawing.Size(38, 17);
             this.lblCourseValue.TabIndex = 4;
@@ -120,7 +120,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblDifficultyHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblDifficultyHeader.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold);
             this.lblDifficultyHeader.ForeColor = System.Drawing.Color.White;
-            this.lblDifficultyHeader.Location = new System.Drawing.Point(289, 196);
+            this.lblDifficultyHeader.Location = new System.Drawing.Point(277, 202);
             this.lblDifficultyHeader.Name = "lblDifficultyHeader";
             this.lblDifficultyHeader.Size = new System.Drawing.Size(73, 17);
             this.lblDifficultyHeader.TabIndex = 5;
@@ -132,7 +132,7 @@ namespace OOP_MachineProblem_WizardsLair
             this.lblDifficultyValue.BackColor = System.Drawing.Color.Transparent;
             this.lblDifficultyValue.Font = new System.Drawing.Font("Garamond", 11F);
             this.lblDifficultyValue.ForeColor = System.Drawing.Color.White;
-            this.lblDifficultyValue.Location = new System.Drawing.Point(449, 196);
+            this.lblDifficultyValue.Location = new System.Drawing.Point(437, 202);
             this.lblDifficultyValue.Name = "lblDifficultyValue";
             this.lblDifficultyValue.Size = new System.Drawing.Size(38, 17);
             this.lblDifficultyValue.TabIndex = 6;
@@ -214,8 +214,16 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void btnPlayAgain_Click(object sender, EventArgs e)
         {
-            DifficultyPage difficultyPage = new DifficultyPage();
-            difficultyPage.ShowDialog();
+            DifficultyPage difficultyPage = Application.OpenForms
+                .OfType<DifficultyPage>()
+                .FirstOrDefault();
+
+            if (difficultyPage == null)
+            {
+                difficultyPage = new DifficultyPage();
+            }
+
+            difficultyPage.Show();
             this.Close();
         }
 

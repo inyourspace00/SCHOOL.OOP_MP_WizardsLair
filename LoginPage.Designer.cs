@@ -35,7 +35,7 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnSignup = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.backButton1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCourseSelect
@@ -122,20 +122,20 @@
             this.btnSignup.UseVisualStyleBackColor = true;
             this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
-            // button1
+            // backButton1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnBack;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 43);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backButton1.BackColor = System.Drawing.Color.Transparent;
+            this.backButton1.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnBack;
+            this.backButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton1.FlatAppearance.BorderSize = 0;
+            this.backButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton1.Location = new System.Drawing.Point(9, 11);
+            this.backButton1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.backButton1.Name = "backButton1";
+            this.backButton1.Size = new System.Drawing.Size(40, 43);
+            this.backButton1.TabIndex = 11;
+            this.backButton1.UseVisualStyleBackColor = false;
+            this.backButton1.Click += new System.EventHandler(this.backButton1_Click);
             // 
             // LoginPage
             // 
@@ -144,7 +144,7 @@
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(754, 586);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.backButton1);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblPassword);
@@ -172,6 +172,6 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignup;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backButton1;
     }
 }

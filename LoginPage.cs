@@ -62,11 +62,16 @@ namespace OOP_MachineProblem_WizardsLair
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide();
-                using (Form DifficultyPage = new DifficultyPage())
+                DifficultyPage difficultyPage = Application.OpenForms
+                    .OfType<DifficultyPage>()
+                    .FirstOrDefault();
+
+                if (difficultyPage == null)
                 {
-                    DifficultyPage.ShowDialog();
+                    difficultyPage = new DifficultyPage();
                 }
-                this.Close();
+
+                difficultyPage.Show();
             }
             else
             {
@@ -122,8 +127,18 @@ namespace OOP_MachineProblem_WizardsLair
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void backButton1_Click(object sender, EventArgs e)
         {
+            StartPage startPage = Application.OpenForms
+                .OfType<StartPage>()
+                .FirstOrDefault();
+
+            if (startPage == null)
+            {
+                startPage = new StartPage();
+            }
+
+            startPage.Show();
             this.Close();
         }
     }

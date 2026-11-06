@@ -31,8 +31,18 @@ namespace OOP_MachineProblem_WizardsLair
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void backButton2_Click(object sender, EventArgs e)
         {
+            LoginPage loginPage = Application.OpenForms
+                .OfType<LoginPage>()
+                .FirstOrDefault();
+
+            if (loginPage == null)
+            {
+                loginPage = new LoginPage();
+            }
+
+            loginPage.Show();
             this.Close();
         }
 

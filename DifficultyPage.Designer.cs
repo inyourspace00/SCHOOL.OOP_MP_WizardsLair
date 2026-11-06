@@ -31,7 +31,7 @@
             this.btnHard = new System.Windows.Forms.Button();
             this.btnEasy = new System.Windows.Forms.Button();
             this.lblDifficultySelect = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.backButton2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHard
@@ -77,20 +77,20 @@
             this.lblDifficultySelect.UseCompatibleTextRendering = true;
             this.lblDifficultySelect.Click += new System.EventHandler(this.lblCourseSelect_Click);
             // 
-            // button1
+            // backButton2
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnBack;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 43);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backButton2.BackColor = System.Drawing.Color.Transparent;
+            this.backButton2.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnBack;
+            this.backButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton2.FlatAppearance.BorderSize = 0;
+            this.backButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton2.Location = new System.Drawing.Point(9, 10);
+            this.backButton2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.backButton2.Name = "backButton2";
+            this.backButton2.Size = new System.Drawing.Size(40, 43);
+            this.backButton2.TabIndex = 9;
+            this.backButton2.UseVisualStyleBackColor = false;
+            this.backButton2.Click += new System.EventHandler(this.backButton2_Click);
             // 
             // DifficultyPage
             // 
@@ -99,7 +99,7 @@
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(755, 586);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.backButton2);
             this.Controls.Add(this.btnHard);
             this.Controls.Add(this.btnEasy);
             this.Controls.Add(this.lblDifficultySelect);
@@ -118,6 +118,6 @@
         private System.Windows.Forms.Button btnHard;
         private System.Windows.Forms.Button btnEasy;
         private System.Windows.Forms.Label lblDifficultySelect;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backButton2;
     }
 }

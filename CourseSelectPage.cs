@@ -41,8 +41,18 @@ namespace OOP_MachineProblem_WizardsLair
         {
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void backButton3_Click(object sender, EventArgs e)
         {
+            DifficultyPage difficultyPage = Application.OpenForms
+                .OfType<DifficultyPage>()
+                .FirstOrDefault();
+
+            if (difficultyPage == null)
+            {
+                difficultyPage = new DifficultyPage();
+            }
+
+            difficultyPage.Show();
             this.Close();
         }
 

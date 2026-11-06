@@ -32,7 +32,7 @@
             this.btnIT132 = new System.Windows.Forms.Button();
             this.btnHUM011 = new System.Windows.Forms.Button();
             this.btnENV075 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.backButton3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCourseSelect
@@ -92,20 +92,20 @@
             this.btnENV075.UseVisualStyleBackColor = true;
             this.btnENV075.Click += new System.EventHandler(this.btnENV075_Click);
             // 
-            // button1
+            // backButton3
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnBack;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 43);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backButton3.BackColor = System.Drawing.Color.Transparent;
+            this.backButton3.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnBack;
+            this.backButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton3.FlatAppearance.BorderSize = 0;
+            this.backButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton3.Location = new System.Drawing.Point(9, 10);
+            this.backButton3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.backButton3.Name = "backButton3";
+            this.backButton3.Size = new System.Drawing.Size(40, 43);
+            this.backButton3.TabIndex = 10;
+            this.backButton3.UseVisualStyleBackColor = false;
+            this.backButton3.Click += new System.EventHandler(this.backButton3_Click);
             // 
             // CourseSelectPage
             // 
@@ -114,7 +114,7 @@
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(755, 586);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.backButton3);
             this.Controls.Add(this.btnENV075);
             this.Controls.Add(this.btnHUM011);
             this.Controls.Add(this.btnIT132);
@@ -136,6 +136,6 @@
         private System.Windows.Forms.Button btnIT132;
         private System.Windows.Forms.Button btnHUM011;
         private System.Windows.Forms.Button btnENV075;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backButton3;
     }
 }
