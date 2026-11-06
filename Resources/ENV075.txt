@@ -5,7 +5,6 @@ flammable
 radioactive
 The term for crushed glass containers destined to be melted and reused to manufacture new products is ___.
 leachate
-slag
 junk
 >cullet
 scrap

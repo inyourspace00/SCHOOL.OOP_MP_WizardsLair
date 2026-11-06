@@ -17,20 +17,16 @@ namespace OOP_MachineProblem_WizardsLair
             InitializeComponent();
         }
 
-        // EASY button clicked (wired in designer as btnIT132_Click)
         private void btnIT132_Click(object sender, EventArgs e)
         {
-            // Moves to Course Select next in the flow
-            CourseSelectPage coursePage = new CourseSelectPage();
+            CourseSelectPage coursePage = new CourseSelectPage("EASY");
             coursePage.Show();
             this.Hide();
         }
 
-        // HARD button clicked (wired in designer as btnHUM011_Click)
         private void btnHUM011_Click(object sender, EventArgs e)
         {
-            // Moves to Course Select next in the flow
-            CourseSelectPage coursePage = new CourseSelectPage();
+            CourseSelectPage coursePage = new CourseSelectPage("HARD");
             coursePage.Show();
             this.Hide();
         }
@@ -42,10 +38,16 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void btnEasy_Click(object sender, EventArgs e)
         {
+            CourseSelectPage coursePage = new CourseSelectPage("EASY");
+            coursePage.Show();
+            this.Hide();
         }
 
         private void btnHard_Click(object sender, EventArgs e)
         {
+            CourseSelectPage coursePage = new CourseSelectPage("HARD");
+            coursePage.Show();
+            this.Hide();
         }
 
         private void lblCourseSelect_Click(object sender, EventArgs e)
