@@ -44,7 +44,7 @@
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblScore.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.Color.Gold;
             this.lblScore.Location = new System.Drawing.Point(45, 47);
             this.lblScore.Name = "lblScore";
@@ -56,7 +56,7 @@
             // lblQuestion
             // 
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuestion.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FloralWhite;
             this.lblQuestion.Location = new System.Drawing.Point(191, 183);
             this.lblQuestion.Name = "lblQuestion";

@@ -42,41 +42,43 @@
             // 
             this.lblCourseSelect.AutoSize = true;
             this.lblCourseSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourseSelect.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourseSelect.Font = new System.Drawing.Font("Garamond", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourseSelect.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCourseSelect.Location = new System.Drawing.Point(402, 143);
+            this.lblCourseSelect.Location = new System.Drawing.Point(288, 119);
+            this.lblCourseSelect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourseSelect.Name = "lblCourseSelect";
-            this.lblCourseSelect.Size = new System.Drawing.Size(197, 82);
+            this.lblCourseSelect.Size = new System.Drawing.Size(177, 63);
             this.lblCourseSelect.TabIndex = 3;
             this.lblCourseSelect.Text = "LOGIN";
             this.lblCourseSelect.UseCompatibleTextRendering = true;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(418, 253);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsername.Location = new System.Drawing.Point(314, 206);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(160, 22);
+            this.txtUsername.Size = new System.Drawing.Size(121, 20);
             this.txtUsername.TabIndex = 4;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(418, 313);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassword.Location = new System.Drawing.Point(314, 254);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(160, 22);
+            this.txtPassword.Size = new System.Drawing.Size(121, 20);
             this.txtPassword.TabIndex = 5;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Garamond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsername.Location = new System.Drawing.Point(439, 224);
+            this.lblUsername.Location = new System.Drawing.Point(329, 182);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(116, 27);
+            this.lblUsername.Size = new System.Drawing.Size(85, 21);
             this.lblUsername.TabIndex = 6;
             this.lblUsername.Text = "Username";
             // 
@@ -84,11 +86,12 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassword.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Garamond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPassword.Location = new System.Drawing.Point(439, 284);
+            this.lblPassword.Location = new System.Drawing.Point(329, 231);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(116, 27);
+            this.lblPassword.Size = new System.Drawing.Size(82, 21);
             this.lblPassword.TabIndex = 7;
             this.lblPassword.Text = "Password";
             this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
@@ -97,10 +100,10 @@
             // 
             this.btnLogin.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.smallerButton;
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogin.Location = new System.Drawing.Point(418, 435);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Location = new System.Drawing.Point(314, 353);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(160, 50);
+            this.btnLogin.Size = new System.Drawing.Size(120, 41);
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -110,10 +113,10 @@
             // 
             this.btnSignup.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.smallerButton;
             this.btnSignup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSignup.Location = new System.Drawing.Point(418, 371);
-            this.btnSignup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSignup.Location = new System.Drawing.Point(314, 301);
+            this.btnSignup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(160, 50);
+            this.btnSignup.Size = new System.Drawing.Size(120, 41);
             this.btnSignup.TabIndex = 10;
             this.btnSignup.Text = "Sign Up";
             this.btnSignup.UseVisualStyleBackColor = true;
@@ -126,21 +129,21 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(9, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 53);
+            this.button1.Size = new System.Drawing.Size(40, 43);
             this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LoginPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1005, 721);
+            this.ClientSize = new System.Drawing.Size(754, 586);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.btnLogin);
@@ -151,7 +154,7 @@
             this.Controls.Add(this.lblCourseSelect);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wizard\'s Lair!";

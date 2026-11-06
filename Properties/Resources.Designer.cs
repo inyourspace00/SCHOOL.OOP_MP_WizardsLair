@@ -222,9 +222,9 @@ namespace OOP_MachineProblem_WizardsLair.Properties {
         ///Statement property
         ///&gt;Horizontal [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string IT1115 {
+        internal static string IT115 {
             get {
-                return ResourceManager.GetString("IT1115", resourceCulture);
+                return ResourceManager.GetString("IT115", resourceCulture);
             }
         }
         

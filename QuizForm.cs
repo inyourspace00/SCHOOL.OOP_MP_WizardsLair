@@ -273,13 +273,13 @@ namespace OOP_MachineProblem_WizardsLair
         {
             lblScore.BackColor = Color.Transparent;
             lblScore.ForeColor = Color.Gold;
-            lblScore.Font = new Font("Consolas", 11, FontStyle.Bold);
+            lblScore.Font = new Font("Garamond", 11, FontStyle.Bold);
             lblScore.TextAlign = ContentAlignment.MiddleCenter;
             lblScore.BorderStyle = BorderStyle.None;
 
             lblQuestion.BackColor = Color.Transparent;
             lblQuestion.ForeColor = Color.White;
-            lblQuestion.Font = new Font("Consolas", 12, FontStyle.Bold);
+            lblQuestion.Font = new Font("Garamond", 12, FontStyle.Bold);
             lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
             lblQuestion.BorderStyle = BorderStyle.None;
             lblQuestion.AutoSize = true;
@@ -290,12 +290,12 @@ namespace OOP_MachineProblem_WizardsLair
             {
                 rdo.BackColor = Color.FromArgb(99, 193, 209);
                 rdo.ForeColor = Color.Black;
-                rdo.Font = new Font("Consolas", 10, FontStyle.Bold);
+                rdo.Font = new Font("Garamond", 10, FontStyle.Bold);
             }
 
             btnNext.BackColor = Color.FromArgb(244, 196, 48);
             btnNext.ForeColor = Color.FromArgb(40, 40, 40);
-            btnNext.Font = new Font("Consolas", 11, FontStyle.Bold);
+            btnNext.Font = new Font("Garamond", 11, FontStyle.Bold);
             btnNext.FlatStyle = FlatStyle.Flat;
             btnNext.FlatAppearance.BorderSize = 1;
             btnNext.FlatAppearance.BorderColor = Color.Black;

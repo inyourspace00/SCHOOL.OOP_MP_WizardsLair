@@ -53,77 +53,93 @@ namespace OOP_MachineProblem_WizardsLair
             this.btnViewLeaderboard = new System.Windows.Forms.Button();
             this.PaymentBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-
+            // 
+            // lblHeader
+            // 
             this.lblHeader.AutoSize = true;
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.Font = new System.Drawing.Font("Garamond", 20F, System.Drawing.FontStyle.Bold);
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(300, 35);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(172, 37);
+            this.lblHeader.Size = new System.Drawing.Size(179, 30);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "GAME OVER";
-
+            // 
+            // lblScoreHeader
+            // 
             this.lblScoreHeader.AutoSize = true;
             this.lblScoreHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblScoreHeader.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblScoreHeader.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold);
             this.lblScoreHeader.ForeColor = System.Drawing.Color.White;
-            this.lblScoreHeader.Location = new System.Drawing.Point(240, 110);
+            this.lblScoreHeader.Location = new System.Drawing.Point(289, 116);
             this.lblScoreHeader.Name = "lblScoreHeader";
-            this.lblScoreHeader.Size = new System.Drawing.Size(88, 20);
+            this.lblScoreHeader.Size = new System.Drawing.Size(83, 17);
             this.lblScoreHeader.TabIndex = 1;
             this.lblScoreHeader.Text = "Final Score:";
-
+            // 
+            // lblScoreValue
+            // 
             this.lblScoreValue.AutoSize = true;
             this.lblScoreValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblScoreValue.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblScoreValue.Font = new System.Drawing.Font("Garamond", 11F);
             this.lblScoreValue.ForeColor = System.Drawing.Color.White;
-            this.lblScoreValue.Location = new System.Drawing.Point(400, 110);
+            this.lblScoreValue.Location = new System.Drawing.Point(449, 116);
             this.lblScoreValue.Name = "lblScoreValue";
-            this.lblScoreValue.Size = new System.Drawing.Size(17, 20);
+            this.lblScoreValue.Size = new System.Drawing.Size(15, 17);
             this.lblScoreValue.TabIndex = 2;
             this.lblScoreValue.Text = "0";
-
+            // 
+            // lblCourseHeader
+            // 
             this.lblCourseHeader.AutoSize = true;
             this.lblCourseHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourseHeader.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCourseHeader.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold);
             this.lblCourseHeader.ForeColor = System.Drawing.Color.White;
-            this.lblCourseHeader.Location = new System.Drawing.Point(240, 150);
+            this.lblCourseHeader.Location = new System.Drawing.Point(289, 156);
             this.lblCourseHeader.Name = "lblCourseHeader";
-            this.lblCourseHeader.Size = new System.Drawing.Size(61, 20);
+            this.lblCourseHeader.Size = new System.Drawing.Size(56, 17);
             this.lblCourseHeader.TabIndex = 3;
             this.lblCourseHeader.Text = "Course:";
-
+            // 
+            // lblCourseValue
+            // 
             this.lblCourseValue.AutoSize = true;
             this.lblCourseValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourseValue.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblCourseValue.Font = new System.Drawing.Font("Garamond", 11F);
             this.lblCourseValue.ForeColor = System.Drawing.Color.White;
-            this.lblCourseValue.Location = new System.Drawing.Point(400, 150);
+            this.lblCourseValue.Location = new System.Drawing.Point(449, 156);
             this.lblCourseValue.Name = "lblCourseValue";
-            this.lblCourseValue.Size = new System.Drawing.Size(36, 20);
+            this.lblCourseValue.Size = new System.Drawing.Size(38, 17);
             this.lblCourseValue.TabIndex = 4;
             this.lblCourseValue.Text = "N/A";
-
+            // 
+            // lblDifficultyHeader
+            // 
             this.lblDifficultyHeader.AutoSize = true;
             this.lblDifficultyHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblDifficultyHeader.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblDifficultyHeader.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold);
             this.lblDifficultyHeader.ForeColor = System.Drawing.Color.White;
-            this.lblDifficultyHeader.Location = new System.Drawing.Point(240, 190);
+            this.lblDifficultyHeader.Location = new System.Drawing.Point(289, 196);
             this.lblDifficultyHeader.Name = "lblDifficultyHeader";
-            this.lblDifficultyHeader.Size = new System.Drawing.Size(78, 20);
+            this.lblDifficultyHeader.Size = new System.Drawing.Size(73, 17);
             this.lblDifficultyHeader.TabIndex = 5;
             this.lblDifficultyHeader.Text = "Difficulty:";
-
+            // 
+            // lblDifficultyValue
+            // 
             this.lblDifficultyValue.AutoSize = true;
             this.lblDifficultyValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblDifficultyValue.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblDifficultyValue.Font = new System.Drawing.Font("Garamond", 11F);
             this.lblDifficultyValue.ForeColor = System.Drawing.Color.White;
-            this.lblDifficultyValue.Location = new System.Drawing.Point(400, 190);
+            this.lblDifficultyValue.Location = new System.Drawing.Point(449, 196);
             this.lblDifficultyValue.Name = "lblDifficultyValue";
-            this.lblDifficultyValue.Size = new System.Drawing.Size(36, 20);
+            this.lblDifficultyValue.Size = new System.Drawing.Size(38, 17);
             this.lblDifficultyValue.TabIndex = 6;
             this.lblDifficultyValue.Text = "N/A";
-
+            // 
+            // btnPlayAgain
+            // 
             this.btnPlayAgain.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnPlayAgain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPlayAgain.Location = new System.Drawing.Point(100, 320);
@@ -133,7 +149,9 @@ namespace OOP_MachineProblem_WizardsLair
             this.btnPlayAgain.Text = "Play Again";
             this.btnPlayAgain.UseVisualStyleBackColor = true;
             this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
-
+            // 
+            // btnViewLeaderboard
+            // 
             this.btnViewLeaderboard.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnViewLeaderboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnViewLeaderboard.Location = new System.Drawing.Point(292, 320);
@@ -143,7 +161,9 @@ namespace OOP_MachineProblem_WizardsLair
             this.btnViewLeaderboard.Text = "Leaderboard";
             this.btnViewLeaderboard.UseVisualStyleBackColor = true;
             this.btnViewLeaderboard.Click += new System.EventHandler(this.btnViewLeaderboard_Click);
-
+            // 
+            // PaymentBtn
+            // 
             this.PaymentBtn.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.PaymentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PaymentBtn.Location = new System.Drawing.Point(484, 320);
@@ -153,7 +173,9 @@ namespace OOP_MachineProblem_WizardsLair
             this.PaymentBtn.Text = "+1 Revive";
             this.PaymentBtn.UseVisualStyleBackColor = true;
             this.PaymentBtn.Click += new System.EventHandler(this.PaymentBtn_Click);
-
+            // 
+            // EndScreenForm
+            // 
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(771, 625);
@@ -172,37 +194,17 @@ namespace OOP_MachineProblem_WizardsLair
             this.MaximizeBox = false;
             this.Name = "EndScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Wizard's Lair - Game Over";
+            this.Text = "Wizard\'s Lair - Game Over";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private void AutoSaveScoreFromLogin()
         {
-            string playerName = "Guest";
-            string userFile = "userData.txt";
-
-            if (File.Exists(userFile))
-            {
-                string firstLine = File.ReadLines(userFile).FirstOrDefault();
-                if (!string.IsNullOrWhiteSpace(firstLine))
-                {
-                    // Split by common delimiters like colon, comma, or dash if passwords are stored on the same line
-                    char[] delimiters = { ':', ',', '-' };
-                    string extractedName = firstLine.Split(delimiters)[0].Trim();
-
-                    if (!string.IsNullOrEmpty(extractedName))
-                    {
-                        playerName = extractedName;
-                    }
-                }
-            }
-
-            string scoreEntry = $"{playerName} - {finalScore}";
-
             try
             {
-                File.AppendAllText("leaderboard.txt", scoreEntry + Environment.NewLine);
+                LeaderboardForm.SaveScoreAuto(finalScore);
             }
             catch (Exception ex)
             {
@@ -225,7 +227,17 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void PaymentBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Redirecting to payment gateway for +1 Revive...", "Revive Option", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            using (PayWallSys paywall = new PayWallSys())
+            {
+                if (paywall.ShowDialog(this) == DialogResult.OK && paywall.ReviveGranted)
+                {
+                    MessageBox.Show("You can continue the quiz with your +1 revive.", "Revive Granted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    QuizForm quiz = new QuizForm(selectedCourse, difficultyLevel);
+                    quiz.Show();
+                    Close();
+                }
+            }
         }
     }
 }

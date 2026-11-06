@@ -14,6 +14,7 @@ namespace OOP_MachineProblem_WizardsLair
     public partial class LoginPage : Form
     {
         private const string FileName = "userData.txt";
+        public static string CurrentUsername { get; private set; }
 
         public LoginPage()
         {
@@ -49,6 +50,7 @@ namespace OOP_MachineProblem_WizardsLair
                             txtPassword.Text.Trim() == savedPassword)
                         {
                             isAuthenticated = true;
+                            CurrentUsername = savedUsername.Trim();
                             break;
                         }
                     }
@@ -76,14 +78,33 @@ namespace OOP_MachineProblem_WizardsLair
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
             // text boxes cannot be empty when signing up
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please fill in all fields to sign up.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+
+            if (File.Exists(FileName))
+            {
+                using (StreamReader sr = new StreamReader(FileName))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        string[] credentials = line.Split(';');
+                        if (credentials.Length == 2 &&
+                            username == credentials[0].Trim() &&
+                            password == credentials[1].Trim())
+                        {
+                            MessageBox.Show("This account already exists.", "Sign Up Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+                }
             }
 
             using (StreamWriter wr = new StreamWriter(FileName, true))

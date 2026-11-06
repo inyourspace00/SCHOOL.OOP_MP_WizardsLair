@@ -38,11 +38,12 @@
             // 
             this.lblTitle1.AutoSize = true;
             this.lblTitle1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle1.Font = new System.Drawing.Font("Snap ITC", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle1.Font = new System.Drawing.Font("Garamond", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitle1.Location = new System.Drawing.Point(177, 117);
+            this.lblTitle1.Location = new System.Drawing.Point(195, 89);
+            this.lblTitle1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle1.Name = "lblTitle1";
-            this.lblTitle1.Size = new System.Drawing.Size(703, 103);
+            this.lblTitle1.Size = new System.Drawing.Size(371, 72);
             this.lblTitle1.TabIndex = 0;
             this.lblTitle1.Text = "Wizard\'s Lair!";
             // 
@@ -50,11 +51,12 @@
             // 
             this.lblTitle2.AutoSize = true;
             this.lblTitle2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle2.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle2.Font = new System.Drawing.Font("Garamond", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitle2.Location = new System.Drawing.Point(252, 210);
+            this.lblTitle2.Location = new System.Drawing.Point(209, 174);
+            this.lblTitle2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle2.Name = "lblTitle2";
-            this.lblTitle2.Size = new System.Drawing.Size(544, 71);
+            this.lblTitle2.Size = new System.Drawing.Size(338, 54);
             this.lblTitle2.TabIndex = 1;
             this.lblTitle2.Text = "Be Smart or Die!";
             // 
@@ -62,11 +64,11 @@
             // 
             this.btnStart.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnStart.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(375, 313);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStart.Font = new System.Drawing.Font("Garamond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(281, 254);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(251, 80);
+            this.btnStart.Size = new System.Drawing.Size(188, 65);
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "START";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -76,11 +78,11 @@
             // 
             this.btnQuit.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.btnStart;
             this.btnQuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuit.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuit.Location = new System.Drawing.Point(375, 415);
-            this.btnQuit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnQuit.Font = new System.Drawing.Font("Garamond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuit.Location = new System.Drawing.Point(281, 337);
+            this.btnQuit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(251, 80);
+            this.btnQuit.Size = new System.Drawing.Size(188, 65);
             this.btnQuit.TabIndex = 3;
             this.btnQuit.Text = "QUIT";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -88,18 +90,18 @@
             // 
             // StartPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OOP_MachineProblem_WizardsLair.Properties.Resources.MainBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1005, 721);
+            this.ClientSize = new System.Drawing.Size(754, 586);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblTitle2);
             this.Controls.Add(this.lblTitle1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StartPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wizard\'s Lair!";

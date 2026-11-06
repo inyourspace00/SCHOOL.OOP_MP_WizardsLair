@@ -65,7 +65,7 @@ namespace OOP_MachineProblem_WizardsLair
             // 
             this.mainText.AutoSize = true;
             this.mainText.BackColor = System.Drawing.Color.Transparent;
-            this.mainText.Font = new System.Drawing.Font("Gabriola", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainText.Font = new System.Drawing.Font("Garamond", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainText.ForeColor = System.Drawing.Color.White;
             this.mainText.Location = new System.Drawing.Point(25, 27);
             this.mainText.Name = "mainText";
@@ -77,7 +77,7 @@ namespace OOP_MachineProblem_WizardsLair
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 36.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Garamond", 36.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 130);
             this.label1.Name = "label1";
@@ -88,7 +88,7 @@ namespace OOP_MachineProblem_WizardsLair
             // numberInput
             // 
             this.numberInput.BackColor = System.Drawing.Color.Gold;
-            this.numberInput.Font = new System.Drawing.Font("Gabriola", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberInput.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numberInput.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.numberInput.Location = new System.Drawing.Point(50, 213);
             this.numberInput.Name = "numberInput";
